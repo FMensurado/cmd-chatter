@@ -1,0 +1,26 @@
+{
+  "name": "cmd-chatter",
+  "version": "1.0.0",
+  "description": "Command chatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FMensurado/cmd-chatter.git"
+  },
+  "author": "Frederico Mensurado",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "promise": "^8.0.1",
+    "shell-quote": "^1.6.1",
+    "socket.io": "^2.0.4",
+    "uuid": "^3.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/FMensurado/cmd-chatter/issues"
+  },
+  "homepage": "https://github.com/FMensurado/cmd-chatter#readme"
+}
