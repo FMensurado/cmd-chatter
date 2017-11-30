@@ -2,7 +2,8 @@ const io = require('socket.io-client');
 const readline = require('readline');
 const Promise = require('promise');
 
-var socket = io('http://localhost:3000');
+//var socket = io('http://localhost:3000');
+var socket = io('http://cmd-chatter-cmd-chatter.193b.starter-ca-central-1.openshiftapps.com');
 var clientName;
 
 var getCmd = () => {

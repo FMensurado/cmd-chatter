@@ -3,7 +3,9 @@ var spawn = require('child_process').spawn;
 var parseArgs = require('shell-quote').parse;
 
 // TODO: url should be a command line argument
-var socket = io('http://localhost:3000');
+// cmd-chatter-cmd-chatter.193b.starter-ca-central-1.openshiftapps.com
+//var socket = io('http://localhost:3000');
+var socket = io('http://cmd-chatter-cmd-chatter.193b.starter-ca-central-1.openshiftapps.com');
 
 var runCommand = function(cmd, res) {
   var ls = spawn('cmd', ['/C'].concat(parseArgs(cmd.replace('\\','\\\\'))));
