@@ -72,6 +72,6 @@ console.log(process.env.PORT, process.env.IP);
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
-http.listen(port, ipaddress, function(){
+http.listen(port, ip, function(){
   console.log('listening on ' + ip + ':' + port);
 });
