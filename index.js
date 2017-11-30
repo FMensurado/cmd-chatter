@@ -68,7 +68,9 @@ io.on('connection', function(socket){
   });
 });
 
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
-http.listen('8080', '172.31.19.15', function(){
-  console.log('listening on 172.31.19.15:8080');
+http.listen(port, ipaddress, function(){
+  console.log('listening on ' + ipaddress + ':' + port);
 });
